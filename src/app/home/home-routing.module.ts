@@ -1,3 +1,6 @@
+
+import { LatestPostsBySectionComponent } from './latest-posts-by-section/latest-posts-by-section.component';
+import { LatestPostsComponent } from './latest-posts/latest-posts.component';
 import { HeaderComponent } from './header/header/header.component';
 import { HomeComponent } from './home.component';
 import { NgModule } from '@angular/core';
@@ -10,7 +13,15 @@ const routes: Routes = [
     children:[
       {
         path:'',
-        component:HeaderComponent
+        component: HeaderComponent
+      },
+      {
+        path:'',
+        component: LatestPostsComponent
+      },
+      {
+        path:'',
+        component: LatestPostsBySectionComponent
       }
     ]
   }
