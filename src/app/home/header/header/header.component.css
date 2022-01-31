@@ -35,7 +35,7 @@ li{
   justify-content: space-around;
   color: #FFF500;
   margin: 0px 10px;
-  font-size: 20px;
+  font-size: 16px;
   cursor: pointer;
 }
 
@@ -47,7 +47,7 @@ li{
 {
 	 float: left;
 	 display:block;
-	 line-height: 20px;
+	 line-height: 16px;
 }
 
 .companymenuli > ul{

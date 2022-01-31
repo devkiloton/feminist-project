@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-latest-posts-by-section',
@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LatestPostsBySectionComponent implements OnInit {
 
+  mocks: any = require('../../../Mocks/latest-posts-by-section.json');
   constructor() { }
-
+  @Input() section:string = '';
   ngOnInit(): void {
   }
 

@@ -1,2 +1,13 @@
-<p>latest-posts-by-section works!</p>
-<app-post></app-post>
+<section>
+  <div class="title">
+    <p>{{section}}</p>
+  </div>
+  <div class="carousel-list">
+    <div *ngFor="let mock of mocks">
+      <app-post
+        title={{mock.title}}
+        thumb={{mock.thumb}}
+      ></app-post>
+    </div>
+  </div>
+</section>
