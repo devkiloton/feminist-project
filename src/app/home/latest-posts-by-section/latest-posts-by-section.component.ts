@@ -7,10 +7,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class LatestPostsBySectionComponent implements OnInit {
 
+  articles: any[] = [];
   mocks: any = require('../../../Mocks/latest-posts-by-section.json');
   constructor() { }
   @Input() section:string = '';
   ngOnInit(): void {
+    this.articles = [this.mocks[0],this.mocks[1],this.mocks[2],this.mocks[3],this.mocks[4]]
   }
 
 }

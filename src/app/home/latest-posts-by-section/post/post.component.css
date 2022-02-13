@@ -1,4 +1,24 @@
 img{
   width: 200px;
   height: 200px;
+  margin: 20px;
+  margin-bottom: 0;
+  margin-left: 0;
+  border-radius: 10px;
+}
+
+.title-post-by-section
+{
+  position: relative;
+  bottom: 40px;
+  left: 20px;
+  width: 160px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: -10px;
 }

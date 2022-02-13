@@ -3,11 +3,16 @@
     <p>{{section}}</p>
   </div>
   <div class="carousel-list">
-    <div *ngFor="let mock of mocks">
+    <div *ngFor="let article of articles, let i = index">
       <app-post
-        title={{mock.title}}
-        thumb={{mock.thumb}}
-      ></app-post>
+        title={{article.title}}
+        thumb={{article.thumb}}
+        *ngIf="i <= 5; elseBlock"
+        ></app-post>
     </div>
+    <app-post
+        title='VER MAIS'
+        thumb='https://images.unsplash.com/photo-1551410224-699683e15636?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80'
+      ></app-post>
   </div>
 </section>
