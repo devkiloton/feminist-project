@@ -1,27 +1,14 @@
-import { PostComponent } from './latest-posts-by-section/post/post.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './home.component';
-import { HomeRoutingModule } from './home-routing.module';
-import { HeaderComponent } from './header/header/header.component';
-import { LatestPostsComponent } from './latest-posts/latest-posts.component';
-import { LatestPostsBySectionComponent } from './latest-posts-by-section/latest-posts-by-section.component';
-
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { RouterModule } from '@angular/router';
+import { HomePageModule } from './pages/home-page/home-page.module';
 
 @NgModule({
   declarations: [
-    HomeComponent,
-    HeaderComponent,
-    LatestPostsComponent,
-    LatestPostsBySectionComponent,
-    PostComponent
   ],
-  imports: [
-    CommonModule,
-    HomeRoutingModule
-  ],
+  imports: [CommonModule, HomePageModule, RouterModule.forChild([{path:'', component: HomePageComponent }])],
   exports: [
-    HomeComponent
   ]
 })
 export class HomeModule { }

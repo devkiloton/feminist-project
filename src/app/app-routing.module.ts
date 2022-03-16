@@ -3,17 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path:'',
+    path: '',
     pathMatch: 'full',
-    redirectTo: 'home'
+    redirectTo: '/home',
   },
   {
     path: 'home',
-    loadChildren: async () => {
-      const module = await import('./home/home.module');
-      return module.HomeModule;
-    }
-  }
+    loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
+  },
 ];
 
 @NgModule({
