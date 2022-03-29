@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	font-family: 'Montserrat', sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -46,3 +47,40 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+:root {
+	--text-primary-color: #FFF500;
+	--bg-text-primary-color: #7F42BB;
+  }
+  
+  /*ng-image-slider classes*/
+  
+  .image{
+	  cursor: pointer;
+	}
+	
+	.img-div:hover{
+		opacity: 0.7;
+		transition: all 500ms;
+	}
+	
+	.caption{
+		cursor: pointer;
+		height: 25%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--bg-text-primary-color);
+		color: var(--text-primary-color) !important;
+		background-image: none !important;
+	}
+	
+	.next-icon{
+		background-color: var(--bg-text-primary-color) !important;
+		color: var(--text-primary-color) !important;
+	}
+	
+	.prev-icon{
+		background-color: var(--bg-text-primary-color) !important;
+		color: var(--text-primary-color) !important;
+	}
