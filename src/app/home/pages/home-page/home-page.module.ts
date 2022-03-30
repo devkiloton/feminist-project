@@ -4,6 +4,7 @@ import { AppModule } from 'src/app/app.module';
 import { PageModule } from 'src/app/shared/page';
 import { HomePageComponent } from '.';
 import { LatestPostsBySectionModule } from 'src/app/shared/latest-posts-by-section/latest-posts-by-section.module';
+import { LatestPostsModule } from 'src/app/shared/latest-posts/latest-posts.module';
 
 
 
@@ -12,7 +13,8 @@ import { LatestPostsBySectionModule } from 'src/app/shared/latest-posts-by-secti
   imports: [
     CommonModule,
     PageModule,
-    LatestPostsBySectionModule
+    LatestPostsBySectionModule,
+    LatestPostsModule
   ],
   exports: [
     HomePageComponent
