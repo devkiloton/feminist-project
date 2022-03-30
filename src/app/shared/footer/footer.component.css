@@ -2,4 +2,12 @@
     height: 100px;
     background-color: var(--bg-text-primary-color);
     width: 100vw;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    color: var(--text-primary-color);
 }
