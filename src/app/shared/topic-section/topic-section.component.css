@@ -1,0 +1,9 @@
+.topic{
+    background-color: var(--bg-text-primary-color);
+    width: fit-content;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: var(--text-primary-color);
+    font-size: 2rem;
+}

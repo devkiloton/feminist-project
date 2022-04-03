@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="angry-grid">
+    <div
+      class="item-{{ i }} commom"
+      *ngFor="let image of images; let i = index"
+    >
+      <img class="little-img" [src]="images[i]" />
+      <div class="little-p">
+        <p>{{ titles[i] }}</p>
+      </div>
+    </div>
+    <div
+      class="item-{{ i }} commom"
+      *ngFor="let image of images; let i = index"
+    >
+      <img class="little-img" [src]="images[i]" />
+      <div class="little-p">
+        <p>{{ titles[i] }}</p>
+      </div>
+    </div>
+    <div></div>
+  </div>
+  <button>Ver mais</button>
+</div>
